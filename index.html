@@ -8,107 +8,122 @@
   <meta property="og:title" content="Nicolas Le Guillarme · AI engineer">
   <meta property="og:description" content="Language models, knowledge graphs, and the engineering to make them hold up in real conditions.">
   <meta property="og:type" content="website">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=JetBrains+Mono:wght@400;500&display=swap">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <main>
+  <div class="page">
 
-    <header class="hero">
-      <p class="eyebrow">Senior AI engineer · PhD</p>
-      <h1>Nicolas Le Guillarme</h1>
-      <p class="lead">
-        My work turns complex, messy information into knowledge teams can act on,
-        using language models, knowledge graphs, and the engineering to make them
-        hold up in real conditions. What the work is for counts for me, so I aim it
-        at problems that matter to people and the planet.
-      </p>
-      <p class="links">
+    <header class="topbar">
+      <span>AI engineer, PhD</span>
+      <span>Pau, France</span>
+      <nav class="toplinks" aria-label="Profiles">
         <!-- TODO: replace each "#" with your real profile URL -->
         <a href="https://github.com/nleguillarme">GitHub</a>
         <a href="https://www.linkedin.com/in/nicolas-le-guillarme/">LinkedIn</a>
         <a href="https://scholar.google.com/citations?user=okKKVJUAAAAJ&hl=fr">Google Scholar</a>
         <a href="https://www.researchgate.net/profile/Nicolas-Le-Guillarme-2">ResearchGate</a>
-      </p>
+      </nav>
     </header>
 
-    <section aria-labelledby="about">
-      <h2 id="about">About</h2>
-      <p>
-        A PhD-trained AI engineer, I have spent over ten years in research and
-        industry. Most of my recent work has been in ecology, at the Alpine Ecology
-        Lab (CNRS). There I built language-model pipelines to extract information
-        from large document collections, knowledge graphs to connect data across
-        sources, and open-source tools. Other projects included data pipelines for
-        large citizen-science datasets and models that identify animals from sound.
-        Earlier, my work covered real-time AI for audiovisual production.
-      </p>
-      <p>
-        Away from the keyboard: in 2025 I ran a small tea and specialty coffee shop
-        in Pau, which taught me a lot about customers and cash flow. I also teached
-        algorithmics and complex problem solving to engineering students.
-      </p>
-    </section>
+    <main>
+      <h1 class="name">Nicolas<br>Le Guillarme</h1>
 
-    <section aria-labelledby="work">
-      <h2 id="work">Selected work</h2>
+      <section class="block block--first" aria-labelledby="statement">
+        <h2 class="label" id="statement"><span class="mark"></span>01 Statement</h2>
 
-      <article class="card">
-        <h3>TaxoNERD</h3>
-        <p>Deep neural models that recognise species names in ecological and evolutionary literature. Published in <em>Methods in Ecology and Evolution</em>.</p>
-        <!-- TODO: replace "#" with the repository URL -->
-        <a class="card-link" href="https://github.com/nleguillarme/taxonerd">Code and paper →</a>
-      </article>
+        <div class="statement-grid">
+          <div>
+            <p class="statement">My work turns complex, messy information into knowledge teams can act on: language models, knowledge graphs, and the engineering to make them hold up in real conditions.</p>
+            <p class="why"> Listening first, the simplest method that works, and tools shaped by their users: that's how I make AI useful to those who need it.<br/><br/>What the work is for counts for me, so I aim it at problems that matter to people and the planet.</p>
+          </div>
 
-      <article class="card">
-        <h3>inteGraph</h3>
-        <p>An open-source toolkit for biodiversity data integration and FAIR knowledge graph construction. Published in <em>European Journal of Soil Biology</em>.</p>
-        <!-- TODO: add the toolkit name and replace "#" with the repository URL -->
-        <a class="card-link" href="https://nleguillarme.github.io/inteGraph/">Code and paper →</a>
-      </article>
+          <figure class="panel">
+            <div class="panel-head"><span>Text to graph</span><span>Illustration</span></div>
+            <div class="panel-body">
+              <p class="panel-label">Text</p>
+              <p class="sentence">“<span class="hl">Springtails</span> feed mainly on <span class="hl">fungi</span> and <span class="hl">decaying plant matter</span>.”</p>
 
-      <article class="card">
-        <h3>Soil Food Web Ontology</h3>
-        <p>An ontology that aligns trophic groups, processes, resources and dietary traits to support food-web research. I led its development and coordinated the working group. Published in <em>Ecological Informatics</em>.</p>
-        <!-- TODO: replace "#" with the ontology or paper URL -->
-        <a class="card-link" href="https://soilfoodwebontology.github.io/">Ontology and paper →</a>
-      </article>
-    </section>
+              <p class="panel-label panel-label--graph">Graph</p>
+              <div class="graph" role="img" aria-label="Springtails feed on fungi and on decaying plant matter. Inferred: springtails are a fungivore and a detritivore.">
+                <span class="node node--subject">Springtails</span>
+                <div class="stem"></div>
 
-    <section aria-labelledby="pubs">
-      <h2 id="pubs">Publications</h2>
-      <p class="muted">Selected. The full list is on <a href="https://scholar.google.com/citations?user=okKKVJUAAAAJ&hl=fr">Google Scholar</a>.</p>
-      <ul class="pubs">
-        <li>
-          <span class="title">The changing landscape of text mining: a review of approaches for ecology and evolution</span>
-          <span class="meta">Farrell MJ, Le Guillarme N, Brierley L, Hunter B, et al. · <em>Proceedings of the Royal Society B</em> 291 (2024)</span>
-        </li>
-        <li>
-          <span class="title">A practical approach to constructing a knowledge graph for soil ecological research</span>
-          <span class="meta">Le Guillarme N, Thuiller W · <em>European Journal of Soil Biology</em> 117 (2023)</span>
-        </li>
-        <li>
-          <span class="title">The Soil Food Web Ontology: aligning trophic groups, processes, resources, and dietary traits to support food-web research</span>
-          <span class="meta">Le Guillarme N, Hedde M, Potapov AM, et al. · <em>Ecological Informatics</em> 78 (2023)</span>
-        </li>
-        <li>
-          <span class="title">TaxoNERD: deep neural models for the recognition of taxonomic entities in the ecological and evolutionary literature</span>
-          <span class="meta">Le Guillarme N, Thuiller W · <em>Methods in Ecology and Evolution</em> (2021)</span>
-        </li>
-      </ul>
-    </section>
+                <div class="rel r1"><span class="line"></span><span class="rel-label">feeds on →</span></div>
+                <div class="obj r1"><span class="node">Fungi</span></div>
 
-    <section aria-labelledby="contact">
-      <h2 id="contact">Get in touch</h2>
-      <p>
-        If you're using these tools on something worthwhile, I'd like to hear about it.
-      </p>
-      <p><a class="mail" href="mailto:nleguillarme.pro@gmail.com">nleguillarme.pro@gmail.com</a></p>
-    </section>
+                <div class="rel rel--inferred r2"><span class="line line--dashed"></span><span class="rel-label">is a</span></div>
+                <div class="obj obj--inferred r2"><span class="line line--dashed"></span><span class="node">Fungivore</span></div>
 
-  </main>
+                <div class="rel r3"><span class="line"></span><span class="rel-label">feeds on →</span></div>
+                <div class="obj r3"><span class="node">Decaying plant matter</span></div>
 
-  <footer>
-    <p>Based in Pau, France.</p>
-  </footer>
+                <div class="rel rel--inferred r4"><span class="line line--dashed"></span><span class="rel-label">is a</span></div>
+                <div class="obj obj--inferred r4"><span class="line line--dashed"></span><span class="node">Detritivore</span></div>
+              </div>
+
+              <p class="legend">Solid: extracted from the text. Dashed: inferred by reasoning over the ontology.</p>
+              <p class="caption">The kind of structure my pipelines pull out of the literature, at scale.</p>
+            </div>
+          </figure>
+        </div>
+      </section>
+
+      <section class="block" aria-labelledby="work">
+        <h2 class="label" id="work"><span class="mark"></span>02 Selected work</h2>
+        <ul class="list">
+          <li class="work">
+            <h3>TaxoNERD</h3>
+            <p>Deep neural models that recognise species names in ecological and evolutionary literature.<br/>Published in <em>Methods in Ecology and Evolution</em>.</p>
+            <!-- TODO: replace "#" with the repository URL -->
+            <a class="card-link" href="https://github.com/nleguillarme/taxonerd">Code and paper →</a>
+          </li>
+          <li class="work">
+            <h3>inteGraph</h3>
+            <p>An open-source toolkit for biodiversity data integration and FAIR knowledge graph construction.<br/>Published in <em>European Journal of Soil Biology</em>.</p>
+            <!-- TODO: add the toolkit name and replace "#" with the repository URL -->
+            <a class="card-link" href="https://nleguillarme.github.io/inteGraph/">Code and paper →</a>
+          </li>
+          <li class="work">
+            <h3>Soil Food Web Ontology</h3>
+            <p>An ontology that aligns trophic groups, processes, resources and dietary traits to support food-web research. I led its development and coordinated the working group.<br/>Published in <em>Ecological Informatics</em>.</p>
+            <!-- TODO: replace "#" with the ontology or paper URL -->
+            <a class="card-link" href="https://soilfoodwebontology.github.io/">Ontology and paper →</a>
+          </li>
+        </ul>
+      </section>
+
+      <section class="block" aria-labelledby="pubs">
+        <h2 class="label" id="pubs"><span class="mark"></span>03 Publications <span class="label-note">· selected, full list on <a href="#">Google Scholar</a></span></h2>
+        <ul class="list">
+          <li class="pub">
+            <span class="year">2024</span>
+            <span class="pub-title">The changing landscape of text mining: a review of approaches for ecology and evolution <span class="venue">· Proc. R. Soc. B</span></span>
+          </li>
+          <li class="pub">
+            <span class="year">2023</span>
+            <span class="pub-title">A practical approach to constructing a knowledge graph for soil ecological research <span class="venue">· Eur. J. Soil Biol.</span></span>
+          </li>
+          <li class="pub">
+            <span class="year">2023</span>
+            <span class="pub-title">The Soil Food Web Ontology <span class="venue">· Ecological Informatics</span></span>
+          </li>
+          <li class="pub">
+            <span class="year">2021</span>
+            <span class="pub-title">TaxoNERD: deep neural models for the recognition of taxonomic entities <span class="venue">· Methods Ecol. Evol.</span></span>
+          </li>
+        </ul>
+      </section>
+
+      <section class="block" aria-labelledby="contact">
+        <h2 class="label" id="contact"><span class="mark"></span>04 Contact</h2>
+        <p class="invite">If you're using these tools on something worthwhile, I'd like to hear about it.</p>
+        <a class="mail" href="mailto:nleguillarme.pro@gmail.com">nleguillarme.pro@gmail.com</a>
+      </section>
+    </main>
+
+  </div>
 </body>
 </html>
